@@ -1,0 +1,23 @@
+/* body{
+    background-color: #923be3;
+
+} */
+/* group selector */
+/* h2,p{
+    color: brown;
+} */
+/* CLASS */
+.name{
+    color:blue;
+    border:  2px solid black;
+
+}
+/* ID */
+#uniko{
+    background-color: red;
+}
+/* UNIVERSAL SELECTOR */
+*{
+    margin: 20px;
+    padding: 100;
+}
