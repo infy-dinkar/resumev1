@@ -3,9 +3,9 @@
 
 } */
 /* group selector */
-/* h2,p{
+h1,p{
     color: brown;
-} */
+}
 /* CLASS */
 .name{
     color:blue;
