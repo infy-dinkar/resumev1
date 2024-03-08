@@ -1,23 +1,129 @@
-/* body{
-    background-color: #923be3;
-
-} */
-/* group selector */
-h1,p{
-    color: brown;
-}
-/* CLASS */
-.name{
-    color:blue;
-    border:  2px solid black;
-
-}
-/* ID */
-#uniko{
-    background-color: red;
-}
-/* UNIVERSAL SELECTOR */
 *{
-    margin: 20px;
-    padding: 100;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.portfolio_container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+}
+.navlist li {
+    list-style: none;
+}
+.navlist li a:hover{
+
+    color: #5db9ee;
+
+}
+
+
+.navlist li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.left,.right{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left{
+    background:linear-gradient(-45deg,#3877ff,#262525 80%);
+    width: 30%;
+}
+.right{
+    background-color:#262525;
+    width: 70%;
+    padding-left:  5rem;
+
+}
+.icon .fa-brands{
+    color: #fff;
+    font-size: 2rem;
+    height: 40px;
+    width: 30px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 50px;
+}
+.content{
+    margin-left: 40px;
+}
+.content .intro{
+    font-size: 25px;
+    color: #fff;
+}
+.content .intro span{
+    color: #5db9ee;
+
+}
+
+.content h1{
+    font-size: 40px;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 20px;
+    color: #fff;
+    max-width: 38rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 18px;
+}
+.btn-container button{
+    border: 2px solid #5db9ee;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+button:nth-child(1){
+    background-color: #5db9ee;
+    color: #262525;
+}
+button:nth-child(2){
+    background-color: transparent;
+    color: #5db9ee;
+    margin-left: 20px;
+    
+}
+button:nth-child(1):hover{
+    background-color: transparent;
+    color: #5db9ee;
+}
+button:nth-child(2):hover{
+    background-color: #5db9ee;
+    color: #262525;
+}
+.fa-brands:hover{
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color:transparent ;
+}
+   
+.image {
+    border-radius: 50%;
+    top: 60%;
+    left: 100%;
+    transform: translate(-60% 70%);
 }
